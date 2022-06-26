@@ -23,19 +23,19 @@
 
         <div class="container">
             <div class="card w-50 mx-auto my-5">
-                <div class="card-header text-center">User Login</div>
+                <div class="card-header text-center header-form">User Login</div>
                 <div class="card-body">
                     <form action="user-login" method="post">
                         <div class="form-group">
-                            <label>Email address</label> 
-                            <input type="email" name="login-email" class="form-control" placeholder="Enter email">
+                            <label class="login-text">Email address*</label> 
+                            <input type="email" name="login-email" class="form-control" placeholder="Enter your email">
                         </div>
                         <div class="form-group">
-                            <label>Password</label> 
-                            <input type="password" name="login-password" class="form-control" placeholder="Password">
+                            <label class="login-text">Password*</label> 
+                            <input type="password" name="login-password" class="form-control" placeholder="Enter your password">
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary">Login</button>
+                            <button type="submit" class="btn btn-primary btn-login">Login</button>
                         </div>
                     </form>
                 </div>

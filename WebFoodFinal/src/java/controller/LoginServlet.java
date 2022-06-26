@@ -88,7 +88,7 @@ public class LoginServlet extends HttpServlet {
 //				System.out.print("user logged in");
                 response.sendRedirect("index.jsp");
             } else {
-                out.println("there is no user");
+                out.println("<h1 style=\"text-align:center;\" >Wrong password or this user doesn't exist!<h1>");
             }
 
         } catch (ClassNotFoundException | SQLException e) {

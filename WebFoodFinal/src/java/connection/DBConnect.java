@@ -13,7 +13,7 @@ public class DBConnect {
 	public static Connection getConnection() throws ClassNotFoundException, SQLException{
         if(connection == null){
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection=DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:1433;databaseName=WebFinal2022","sa","abc123");
+            connection=DriverManager.getConnection("jdbc:sqlserver://127.0.0.1:1433;databaseName=WebFinal2022","sa","123456");
             System.out.print("connected");
         }
         return connection;

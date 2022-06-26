@@ -18,7 +18,7 @@ import model.Cart;
  *
  * @author ADMIN
  */
-@WebServlet("/quantity-inc-dec")
+//@WebServicelet("/quantity-inc-dec")
 public class QuantityIncDecServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;

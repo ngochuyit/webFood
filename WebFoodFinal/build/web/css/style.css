@@ -10,5 +10,21 @@ navbar-brand {
     margin-top: 10px;
     margin-left: 5px;
 }
+.btn-login:hover{
+    background-color: #00cc33;
+    border: none;
+    transform: scale(1.1)
+}
 
+.btn-login{
+    transition: 0.25s;
+}
 
+.header-form{
+    background-color: #007bff;
+    color: white;
+}
+
+.login-text{
+    color: red;
+}
