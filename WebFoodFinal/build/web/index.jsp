@@ -18,7 +18,7 @@
     }
 %>
 <!DOCTYPE html>
-<html>
+<html >
     <head>
         <%@include file="/includes/head.jsp"%>
         <title>FastFood</title>
@@ -57,6 +57,6 @@
             </div>
         </div>
 
-        <%@include file="/includes/footer.jsp"%>
+
     </body>
 </html>

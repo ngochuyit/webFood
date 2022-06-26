@@ -7,9 +7,20 @@
     <head>
         
     </head>
-    <body>
-    <div style="margin-top:200px;"></div>
-    <hr/>
-    <p style="color:red; text-align:center">Coppyright by Don che group</p>
+    <body >
+    
+    <div style="position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: red;
+                text-align: center;">
+        <hr/>
+        <p >Coppyright by Don che group</p>
+    </div>
+        
     </body>
+    
+        
+    
 </html>
