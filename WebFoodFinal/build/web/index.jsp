@@ -26,37 +26,43 @@
     <body>
         <%@include file="/includes/navbar.jsp"%>
 
-        <div class="container">
+        <section class="menu" id="menu">
             <div class="card-header my-3">All Products</div>
+            <div class="box-container">
             <div class="row">
                 <%                            if (!products.isEmpty()) {
                         for (Product p : products) {
                 %>
-                <div class="col-md-3 my-3">
-                    <div class="card w-100">
-                        <img class="card-img-top" src="image/<%=p.getImage()%>"
-                             alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><%=p.getName()%></h5>
-                            <h6 class="price">Price: $<%=p.getPrice()%></h6>
-                            <h6 class="category">Category: <%=p.getCategory()%></h6>
-                            <div class="mt-3 d-flex justify-content-between">
-                                <a class="btn btn-dark" href="add-to-cart?id=<%=p.getId()%>">Add to Cart</a> <a
-                                    class="btn btn-primary" href="order-now?quantity=1&id=<%=p.getId()%>">Buy Now</a>
-                            </div>
-                        </div>
+                <div class="col-md-4 my-4">
+                    <div class="image">
+                        <img src="image/<%=p.getImage()%>"><!-- comment -->
+                        <a href="#" class="fas fa-heart"></a>
                     </div>
-                </div>
-                <%
-                        }
-                    } else {
-                        out.println("There is no proucts");
-                    }
-                %>
+                    <div class="content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h6><%=p.getName()%><h6>
+                        <h6 class="category">Category: <%=p.getCategory()%><h6>
+                                <h6>This is a wonderful food of VietNam</h6>                       
+                                <a href="add-to-cart?id=<%=p.getId()%>" class="btn btn-dark">Add to Cart</a>
+                                <a href="order-now?quantity=1&id=<%=p.getId()%>" class="btn btn-primary">Buy</a>
+                                <a class="price">Price: $<%=p.getPrice()%></a>
+                                </div>
+                                </div>
 
-            </div>
-        </div>
+                                <%
+                                        }
+                                    } else {
+                                        out.println("There is no proucts");
+                                    }
+                                %>
+                                </div>
+        </section>
 
-
-    </body>
+</body>
 </html>

@@ -38,3 +38,72 @@ navbar-brand {
    color: white;
    text-align: center;
 }
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.menu .box-container .row{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);    
+}
+
+.menu .box-container .row .image{
+    height: 20rem;
+    width: 100%;
+    padding:1.5rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .row .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.menu .box-container .row .image .fa-heart{
+    position: absolute;
+    top:2rem; right: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color:var(--black);
+}
+
+.menu .box-container .row .image .fa-heart:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.menu .box-container .row .content{
+    padding:2rem;
+    padding-top: 0;
+    
+}
+
+.menu .box-container .row .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .row .content .stars i{
+   font-size: 1.7rem;
+   color:var(--green);
+}
+.menu .box-container .box .content h6{
+    color:var(--black);
+}
+
+.menu .box-container .row .content .price{
+    color:var(--green);
+    margin-left: 1rem;
+    font-size: 1.3rem;
+}
