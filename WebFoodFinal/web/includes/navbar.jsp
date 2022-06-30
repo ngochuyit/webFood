@@ -11,15 +11,17 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-2" id="search">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
             </form>
+            
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="index.jsp">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="cart.jsp"><img src="image/icons-cart.png" width="30px" height="30px" alt="alt"/> <span class="badge badge-danger">${cart_list.size()}</span> </a></li>
                     <%
-                        if (auth != null) {
+                        if (auth!= null) {
                     %>
                 <li class="nav-item"><a class="nav-link" href="orders.jsp">Orders</a></li>
                 <li class="nav-item"><a class="nav-link" href="log-out">Logout</a></li>

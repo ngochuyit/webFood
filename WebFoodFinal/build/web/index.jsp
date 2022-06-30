@@ -23,6 +23,9 @@
         <%@include file="/includes/head.jsp"%>
         <title>FastFood</title>
     </head>
+    <style>
+        
+    </style>
     <body>
         <%@include file="/includes/navbar.jsp"%>
 
@@ -48,10 +51,11 @@
                         </div>
                         <h6><%=p.getName()%><h6>
                         <h6 class="category">Category: <%=p.getCategory()%><h6>
-                                <h6>This is a wonderful food of VietNam</h6>                       
-                                <a href="add-to-cart?id=<%=p.getId()%>" class="btn btn-dark">Add to Cart</a>
+                                <h6>This is a wonderful food of VietNam</h6>  
+                                <h6 class="price">Price: $<%=p.getPrice()%></h6>
+                                <a href="add-to-cart?id=<%=p.getId()%>" class="btn btn-success">Add to Cart</a>
                                 <a href="order-now?quantity=1&id=<%=p.getId()%>" class="btn btn-primary">Buy</a>
-                                <a class="price">Price: $<%=p.getPrice()%></a>
+                                
                                 </div>
                                 </div>
 
@@ -63,6 +67,7 @@
                                 %>
                                 </div>
         </section>
+            <%@include file="/includes/footer.jsp"%>                    
 
 </body>
 </html>

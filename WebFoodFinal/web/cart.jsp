@@ -27,7 +27,10 @@
         <%@include file="/includes/head.jsp"%>
         <title>E-Commerce Cart</title>
         <style type="text/css">
-
+            body{
+                background: url('image/backcart.jpg') no-repeat;
+                background-size: cover;
+            }
             .table tbody td{
                 vertical-align: middle;
             }
@@ -35,13 +38,19 @@
                 box-shadow: none;
                 font-size: 25px;
             }
+            #danger{
+                margin-left: 50px;
+            }
+            #total{
+               margin-left: 750px;
+            }
         </style>
     </head>
     <body>
         <%@include file="/includes/navbar.jsp"%>
 
         <div class="container my-3">
-            <div class="d-flex py-3"><h3>Total Price: $ ${(total>0)?dcf.format(total):0} </h3> <a class="mx-3 btn btn-primary" href="cart-check-out">Check Out</a></div>
+
             <table class="table table-light">
                 <thead>
                     <tr>
@@ -63,15 +72,17 @@
                         <td>
                             <form action="order-now" method="post" class="form-inline">
                                 <input type="hidden" name="id" value="<%= c.getId()%>" class="form-input">
-                                <div class="form-group d-flex justify-content-between">
+                                <div class="form-group d-flex justify-content-between w-50">
                                     <a class="btn bnt-sm btn-incre" href="quantity-inc-dec?action=inc&id=<%=c.getId()%>"><i class="fas fa-plus-square"></i></a> 
-                                    <input type="text" name="quantity" class="form-control"  value="<%=c.getQuantity()%>" readonly> 
+                                    <input type="text" name="quantity" class="form-control w-50"  value="<%=c.getQuantity()%>" readonly> 
                                     <a class="btn btn-sm btn-decre" href="quantity-inc-dec?action=dec&id=<%=c.getId()%>"><i class="fas fa-minus-square"></i></a>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-sm">Buy</button>
                             </form>
                         </td>
-                        <td><a href="remove-from-cart?id=<%=c.getId()%>" class="btn btn-sm btn-danger">Remove</a></td>
+                        <td><a href="remove-from-cart?id=<%=c.getId()%>" class="btn btn-sm btn-warning">
+                                <img src="image/trash.png" width="30px" height="25px" alt="alt"/>
+                            </a></td>
                     </tr>
 
                     <%
@@ -79,6 +90,10 @@
                         }%>
                 </tbody>
             </table>
+                <hr><!-- comment -->
+            <div class="d-flex py-3" id="total"><h3>Total: $ ${(total>0)?dcf.format(total):0} </h3>
+                <button type="button" class="btn btn-danger" href="cart-check-out" id="danger">check out</button>
+            </div>
         </div>
 
         <%@include file="/includes/footer.jsp"%>

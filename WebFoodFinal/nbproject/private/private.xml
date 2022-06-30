@@ -3,30 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/NET/WebFoodFinal/web/css/style.css</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-3.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/orders.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/web/login.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-6.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/src/java/controller/CheckOutServlet.java</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-5.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-6.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-4.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-1.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/includes/navbar.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/src/java/dao/OrderDao.java</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-2.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/includes/footer.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/about-img.png</file>
-            <file>file:/D:/NET/WebFoodFinal/web/index.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-2.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/food-galler-img-4.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/cart.jsp</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-5.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/src/java/controller/OrderNowServlet.java</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-3.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/image/blog-img-1.jpg</file>
-            <file>file:/D:/NET/WebFoodFinal/web/includes/head.jsp</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/web/WEB-INF/web.xml</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/web/includes/navbar.jsp</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/web/css/style.css</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/web/index.jsp</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/web/cart.jsp</file>
+            <file>file:/D:/IT19A1B/Web-java-LyQuynhTran/WEBDOAN/webFood/WebFoodFinal/src/java/controller/QuantityIncDecServlet.java</file>
         </group>
     </open-files>
 </project-private>

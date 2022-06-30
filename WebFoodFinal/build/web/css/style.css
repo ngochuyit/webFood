@@ -6,37 +6,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : Jun 26, 2022, 11:07:14 AM
     Author     : ADMIN
 */
+/*Login page*/
 navbar-brand {
     margin-top: 10px;
     margin-left: 5px;
-}
-.btn-login:hover{
-    background-color: #00cc33;
-    border: none;
-    transform: scale(1.1)
-}
-
-.btn-login{
-    transition: 0.25s;
-}
-
-.header-form{
-    background-color: #007bff;
-    color: white;
-}
-
-.login-text{
-    color: red;
-}
-
-.login-footer{
-    position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: red;
-   color: white;
-   text-align: center;
 }
 .menu .box-container{
     display: grid;
@@ -96,14 +69,14 @@ navbar-brand {
 
 .menu .box-container .row .content .stars i{
    font-size: 1.7rem;
-   color:var(--green);
+   color:var(--yellow);
 }
 .menu .box-container .box .content h6{
     color:var(--black);
 }
 
 .menu .box-container .row .content .price{
-    color:var(--green);
+    color:var(--red);
     margin-left: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
